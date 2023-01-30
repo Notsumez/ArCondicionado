@@ -2,6 +2,8 @@ body {
     background-color: #e9edf0;
 }
 
+/* ###################### Começo do Header ###################### */
+
 .linha-topo-header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +17,7 @@ body {
     margin-right: 16px;
     width: 100px;
     margin-left: 15px;
+    margin-top: 5px;
 }
 
 .botoes-nav {
@@ -30,7 +33,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 
 .botoes-nav-item {
     color: black;
@@ -52,7 +54,7 @@ body {
 }
 
 .botoes-nav-item.active:hover {
-    border: solid 2px rgb(75, 75, 202) !important;
+    border: solid 2px rgb(54, 54, 153) !important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -60,3 +62,32 @@ body {
     text-decoration: none;
 }
 
+/* ###################### Fim do Header ###################### */
+
+/* ###################### Começo do Principal ###################### */
+
+.banner-energia-solar {
+    margin: 15px;
+    max-width: 100%;
+    display: flex;
+}
+
+.conteudo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-principal-direita {
+    display: block;
+    font-size: 14pt;
+    padding: 10px 0px;
+    position: relative;
+}
+
+.linha-divisoria {
+    width: 400px;
+}
+
+
+/* ###################### Fim do Principal ###################### */

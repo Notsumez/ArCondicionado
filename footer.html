@@ -1,0 +1,14 @@
+<footer>
+    <!-- formulário de email com aviso de erro  -->
+    <form name="form">
+        E-mail: <input type="email" name="email" ng-model="text">
+        <span ng-show="form.email.$error.email">Digite um email valido!</span>
+    </form>
+
+    <style>
+        input.ng-invalid{
+            background-color: rgb(223, 137, 137);
+        }
+    </style>
+    <!-- fim do formulário de email com aviso de erro  -->
+</footer>
