@@ -1,6 +1,20 @@
+/* ###################### Começo do Geral ###################### */
+
 body {
     background-color: #e9edf0;
 }
+
+@font-face {
+    font-family: 'rexila';
+    src: url('../fonts/rexlia\ rg.otf');
+}
+
+@font-face {
+    font-family: 'astronomus';
+    src: url('../fonts/Astronomus.ttf');
+}
+
+/* ######################  Fim do Geral ###################### */
 
 /* ###################### Começo do Header ###################### */
 
@@ -38,6 +52,8 @@ body {
     color: black;
     margin-right: 16px;
     text-decoration: none;
+    padding: 3px;
+    font-size: 17pt;
 }
 
 .botoes-nav-item.active {
@@ -75,19 +91,64 @@ body {
 .conteudo-principal {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .conteudo-principal-direita {
-    display: block;
-    font-size: 14pt;
+    display: flex;
+    font-size: 12pt;
     padding: 10px 0px;
     position: relative;
 }
 
 .linha-divisoria {
-    width: 400px;
+    width: 100%;
 }
 
+.conteudo-principal-direita-frase {
+    font-family: 'rexila', sans-serif;
+}
 
 /* ###################### Fim do Principal ###################### */
+
+/* ###################### Começo do Produtos ###################### */
+
+.conteudo-produtos {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.conteudo-produtos-info {
+    margin: 15px;
+}
+
+.conteudo-produtos-info-titulo {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+}
+
+.conteudo-produtos-info-divisoria {
+    width: 100%;
+}
+
+.conteudo-produtos-items {
+    margin-top: 20px;
+    font-size: 14pt;
+}
+
+.conteudo-produtos-items-desc-item{
+    display: flex;
+}
+
+.conteudo-produtos-items-desc-item img {
+    width: 70%;
+}
+
+/* ###################### Fim do Produtos ###################### */
