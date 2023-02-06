@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title>Air-Dited</title>
 </head>
-<body ng-app="">
+<body ng-app="meuApp" ng-controller="meuController">
     <!-- incluuindo o header -->
     <?php include('header.html');?>
 
@@ -24,8 +24,23 @@
                     <p>
                         &nbsp; &nbsp; Experimente a força transformadora da energia solar. Na sua casa. <br>
                         Na sua empresa. Na sua vida. Você economiza e ajuda a mudar o mundo.
+                        <img class="linha-divisoria" src="./images/linha.svg" alt="Linha Divisória">
                     </p>
-                    <img class="linha-divisoria" src="./images/linha.svg" alt="Linha Divisória">
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-mvv">
+            <div class="mvv-container">
+                <div class="mvv-conteudo">Missão
+                    <div>Texto</div>
+                </div>
+                <div class="mvv-conteudo">Visão
+                    <div>Texto</div>
+                </div>
+                <div class="mvv-conteudo">Valores
+                    <div>Texto</div>
                 </div>
             </div>
         </section>
@@ -37,44 +52,120 @@
                 <img class="conteudo-produtos-info-divisoria" src="./images/linha.svg" alt="Linha Divisória">
                 </h2>
             </div>
-            <div class="conteudo-produtos-items">
+            <!-- Começo escolha dos Items -->
+            <div class="produtos-opcoesbtns">
+                <div class="opcao" ng-mouseover="funcArcondicionado()">Ar Condicionado</div>
+                <div class="opcao" ng-mouseover="funcInverter()">Ar Condicionado Inverter</div>
+                <div class="opcao" ng-mouseover="funcMultisplit()">Multi Split</div>
+                <div class="opcao" ng-mouseover="funcEnergiasolar()">Energia Solar</div>
+            </div>
+            <div class="imagens-produtos" ng-show="arcondicionado">
                 <div>
-                    <input type="radio" ng-model="opcao" value="ArCondicionado">Ar Condicionado
-                    <input type="radio" ng-model="opcao" value="ArCondicionadoInverter">Ar Condicionado Inverter
-                    <input type="radio" ng-model="opcao" value="MultiSplit">Multi Split
-                    <input type="radio" ng-model="opcao" value="EnergiaSolar">EnergiaSolar
+                    <img src="../ArCondicionado/images/item_arcondicionado4.png" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_arcondicionado4.png" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_arcondicionado4.png" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_arcondicionado4.png" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_arcondicionado4.png" alt="">
                 </div>
             </div>
-                <div ng-switch="opcao">
-                    <div ng-switch-when="ArCondicionado" class="conteudo-produtos-items-desc-item">
-                        <div><img src="./images/item_arcondicionado1.png" alt="Ar Condicionado Split Hi Wall Gree Eco Garden 9000 BTU/h Frio GWC09QA - 220 Volts"></div> <!-- https://www.magazineluiza.com.br/ar-condicionado-split-hi-wall-gree-eco-garden-9000-btu-h-frio-gwc09qa-220-volts/p/fc52069574/ar/arsp/ -->
-                        <div><img src="./images/item_arcondicionado2.png" alt="Ar Condicionado Split Hi Wall Electrolux Ecoturbo 9000 BTU/h Frio VI09F/VE09F - 220 Volts"></div> <!-- https://www.magazineluiza.com.br/ar-condicionado-split-hi-wall-electrolux-ecoturbo-9000-btu-h-frio-vi09f-ve09f-220-volts/p/kdkhe5j9gk/ar/arsp/ -->
-                        <div><img src="./images/item_arcondicionado3.png" alt=""></div> <!-- https://www.magazineluiza.com.br/ar-condicionado-split-hi-wall-philco-black-12000-btu-h-frio-pac12000tfm12-220-volts/p/dck05746g3/ar/arsp/ -->
-                        <div><img src="./images/item_arcondicionado4.png" alt=""></div> <!-- https://www.magazineluiza.com.br/ar-condicionado-janela-gree-10000-btu-h-frio-eletronico-gjc10bl-a3nrnd2q-127-volts/p/fc2gb2gdc7/ar/arja/ -->
-                        <div><img src="./images/item_arcondicionado5.png" alt="Ar-condicionado de Janela Springer Midea - 7.500 BTUs Frio QCI078BB"></div><!-- https://www.magazineluiza.com.br/ar-condicionado-de-janela-springer-midea-7-500-btus-frio-qci078bb/p/216885800/ar/arja/ -->
-                    </div>
-                    <div ng-switch-when="ArCondicionadoInverter" class="conteudo-produtos-items-desc-item">
-                        <div><img src="./images/item_inverter1.webp" alt="Ar Condicionado Split Inverter 12000 BTUs Quente Frio Springer Midea Connect 220v"></div> <!-- https://www.magazineluiza.com.br/ar-condicionado-split-inverter-12000-btus-quente-frio-springer-midea-connect-220v/p/gb686je6eg/ar/arsp/ -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                    </div>
-                    <div ng-switch-when="MultiSplit" class="conteudo-produtos-items-desc-item">
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                    </div>
-                    <div ng-switch-when="EnergiaSolar" class="conteudo-produtos-items-desc-item">
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                        <div><img src="" alt=""></div> <!-- -->
-                    </div>
+            <div class="imagens-produtos" ng-show="inverter">
+                <div>
+                    <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
                 </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
+                </div>
+            </div>
+            <div class="imagens-produtos" ng-show="multisplit">
+                <div>
+                    <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
+                </div>
+            </div>
+            <div class="imagens-produtos" ng-show="energiasolar">
+                <div>
+                    <img src="../ArCondicionado/images/energia.webp" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/energia.webp" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/energia.webp" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/energia.webp" alt="">
+                </div>
+                <div>
+                    <img src="../ArCondicionado/images/energia.webp" alt="">
+                </div>
+            </div>
+
+            <script>
+		        var app = angular.module('meuApp', []);
+		            app.controller('meuController', function($scope) {
+			            $scope.arcondicionado = true;
+			            $scope.inverter = false;
+			            $scope.multisplit = false;
+                        $scope.energiasolar = false;
+			
+			        $scope.funcArcondicionado = function() {
+				        $scope.arcondicionado = true;
+				        $scope.inverter = false;
+				        $scope.energiasolar = false;
+				        $scope.multisplit = false;
+			        }
+
+			        $scope.funcInverter = function() {
+				        $scope.inverter = true;
+				        $scope.arcondicionado = false;
+				        $scope.energiasolar = false;
+				        $scope.multisplit = false;
+			        }
+
+			        $scope.funcMultisplit = function() {
+				        $scope.multisplit = true;
+				        $scope.arcondicionado = false;
+				        $scope.inverter = false;
+                        $scope.energiasolar = false;
+			        }
+
+			        $scope.funcEnergiasolar = function() {
+				        $scope.energiasolar = true;
+				        $scope.arcondicionado = false;
+				        $scope.inverter = false;
+				        $scope.multisplit = false;
+			        }
+		        });
+	        </script>
+            <!-- fim escolha dos items  -->
         </section>
         <!-- Fim do Produtos  -->
     </main>  

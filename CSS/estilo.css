@@ -111,6 +111,27 @@ body {
 
 /* ###################### Fim do Principal ###################### */
 
+/* ###################### Começo do Missão, Visão e Valores (mvv) ###################### */
+
+.bg-mvv {
+    background: url(../images/ENERGIA_SOLAR_SHUTTER.png) fixed no-repeat;
+    height: 250px;
+}
+
+.mvv-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mvv-conteudo {
+    font-size: 18pt;
+    color: white;
+    font-family: 'rexila';
+    margin-top: 100px;
+}
+/* ###################### Fim do Missão, Visão e Valores ###################### */
+
 /* ###################### Começo do Produtos ###################### */
 
 .conteudo-produtos {
@@ -138,17 +159,52 @@ body {
     width: 100%;
 }
 
-.conteudo-produtos-items {
-    margin-top: 20px;
-    font-size: 14pt;
+.produtos-opcoesbtns {
+    display: flex;
+    margin: 10px auto;
 }
 
-.conteudo-produtos-items-desc-item{
+.produtos-opcoesbtns div{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.imagens-produtos {
     display: flex;
 }
 
-.conteudo-produtos-items-desc-item img {
+.imagens-produtos div{
+    margin: 10px;
+}
+
+.imagens-produtos img {
     width: 70%;
 }
 
+.opcao {
+    font-size: 14pt;
+}
+
+.opcao:hover {
+    border-bottom: solid 2px rgb(84, 84, 233);
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
 /* ###################### Fim do Produtos ###################### */
+
+
+/* ###################### Começo do Footer ###################### */
+.bg-footer {
+    background-color: #d4d4d4;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ###################### Fim do Footer ###################### */
