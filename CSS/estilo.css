@@ -14,6 +14,10 @@ body {
     src: url('../fonts/Astronomus.ttf');
 }
 
+@font-face {
+    font-family: 'sansation';
+    src: url('../fonts/Sansation_Light.ttf');
+}
 /* ######################  Fim do Geral ###################### */
 
 /* ###################### Começo do Header ###################### */
@@ -96,7 +100,6 @@ body {
 
 .conteudo-principal-direita {
     display: flex;
-    font-size: 12pt;
     padding: 10px 0px;
     position: relative;
 }
@@ -106,7 +109,8 @@ body {
 }
 
 .conteudo-principal-direita-frase {
-    font-family: 'rexila', sans-serif;
+    font-family: 'sansation', sans-serif;
+    font-size: 14pt;
 }
 
 /* ###################### Fim do Principal ###################### */
@@ -131,6 +135,74 @@ body {
     margin-top: 100px;
 }
 /* ###################### Fim do Missão, Visão e Valores ###################### */
+
+/* ###################### Começo do Serviços ###################### */
+
+.bg-servicos {
+    background-color: #ffffff;
+}
+
+.container-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-servicos {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.linha-divisoria-servicos {
+    width: 100%;
+}
+
+/* ###################### Fim do Serviços ###################### */
+
+/* ###################### Começo do Sobre Nós ###################### */
+
+.container-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-sobre {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.linha-divisoria-sobre {
+    width: 100%;
+}
+
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.texto-sobre {
+    font-family: 'sansation', sans-serif;
+    margin: 15px;
+    font-size: 14pt;
+}
+
+.logotipo-sobre {
+    width: 500px;
+    border-radius: 20px;
+}
+/* ###################### Fim do Sobre Nós ###################### */
 
 /* ###################### Começo do Produtos ###################### */
 
@@ -179,6 +251,16 @@ body {
 
 .imagens-produtos img {
     width: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.imagens-produtos img:hover {
+    width: 80%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .opcao {

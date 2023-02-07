@@ -22,15 +22,15 @@
             <div class="conteudo-principal-direita" >
                 <div class="conteudo-principal-direita-frase">
                     <p>
-                        &nbsp; &nbsp; Experimente a força transformadora da energia solar. Na sua casa. <br>
-                        Na sua empresa. Na sua vida. Você economiza e ajuda a mudar o mundo.
+                        &nbsp; O sistema de Energia Solar funciona com a captação da luz do sol através dos painéis solares, que geram a energia “transportada” até o inversor solar, responsável por converter a energia para a sua rede elétrica.
+                        A partir daí energia solar pode ser usada para alimentar qualquer aparelho doméstico, como geladeiras, lâmpadas e aparelhos de ar condicionado, por exemplo.
                         <img class="linha-divisoria" src="./images/linha.svg" alt="Linha Divisória">
                     </p>
                     
                 </div>
             </div>
         </section>
-        
+        <!-- Começo do MVV  -->
         <section class="bg-mvv">
             <div class="mvv-container">
                 <div class="mvv-conteudo">Missão
@@ -42,6 +42,44 @@
                 <div class="mvv-conteudo">Valores
                     <div>Texto</div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Começo do Serviços  -->
+        <section class="bg-servicos">
+            <div class="container-servicos">
+                <h2 class="titulo-servicos" id="servicos">Serviços
+                    <img class="linha-divisoria-servicos" src="./images/linha.svg" alt="Linha Divisória">
+                </h2>
+                <div class="grade-servicos">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Começo do sobre nós  -->
+        <section>
+            <div class="container-sobre">
+                <h2 class="titulo-sobre" id="sobre">Sobre Nós
+                    <img class="linha-divisoria-sobre" src="./images/linha.svg" alt="Linha Divisória">
+                </h2>
+                <div class="conteudo-sobre">
+                    <p class="texto-sobre">
+                        A Air-Dited nasceu para lhe proporcionar a melhor experiência do mercado em relação a energia solar. <br>
+                        Aqui você não precisa se preocupar com projeto, instalação, burocracia, manutenção, logística ou <br>
+                        qualquer outra coisa que te preocupe. Além de darmos suporte total para o financiamento do seu sistema <br>
+                        solar, somos responsáveis pelo estudo de viabilidade técnica, financeira, projeto e dimensionamento do <br>
+                        seu sistema fotovoltaico, homologação com a concessionária, instalação, monitoramento, seguro e manutenção. <br> <br>
+                        Aqui nós literalmente entregamos a solução completa para você! Somos um braço de Itaquera fundado em 2020, <br>
+                        que vem construindo uma história de sucesso, ampliando seus negócios com solidez e transparência desde então. <br>
+                        Dentro de Itaquera também temos a Air-D Solar, nossa importadora e distribuidora dos melhores equipamentos e <br>
+                        produtos para Energia Solar. Escolhemos a qualidade, inovação, tecnologia e atendimento como nossa essência de <br>
+                        ser. Por este motivo a Provedor Solar nasceu para entregar o que tem de melhor em tecnologia e tranquilidade <br>
+                        aos nossos clientes. Este sempre será o nosso foco, você!
+                    </p>
+                    <img class="logotipo-sobre" src="../ArCondicionado/images/LogoBgPreto.png" alt="Logotipo">
+                </div>
+                
             </div>
         </section>
 
