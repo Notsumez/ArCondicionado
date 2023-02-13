@@ -126,13 +126,19 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
 }
 
 .mvv-conteudo {
-    font-size: 18pt;
+    font-size: 16pt;
     color: white;
     font-family: 'rexila';
     margin-top: 100px;
+}
+
+.mvv-textos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
 }
 /* ###################### Fim do Missão, Visão e Valores ###################### */
 

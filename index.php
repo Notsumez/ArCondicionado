@@ -34,13 +34,22 @@
         <section class="bg-mvv">
             <div class="mvv-container">
                 <div class="mvv-conteudo">Missão
-                    <div>Texto</div>
+                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita nam repellendus distinctio! 
+                        Et Quis aliquam cum autem Quis ut voluptas blanditiis. Et consequatur nisi vel veritatis 
+                        aliquid ut iusto cumque est molestiae perspiciatis. In velit reprehenderit aut sint 
+                        voluptas ad voluptatem saepe?</div>
                 </div>
                 <div class="mvv-conteudo">Visão
-                    <div>Texto</div>
+                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita nam repellendus distinctio! 
+                        Et Quis aliquam cum autem Quis ut voluptas blanditiis. Et consequatur nisi vel veritatis 
+                        aliquid ut iusto cumque est molestiae perspiciatis. In velit reprehenderit aut sint 
+                        voluptas ad voluptatem saepe?</div>
                 </div>
                 <div class="mvv-conteudo">Valores
-                    <div>Texto</div>
+                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita nam repellendus distinctio! 
+                        Et Quis aliquam cum autem Quis ut voluptas blanditiis. Et consequatur nisi vel veritatis 
+                        aliquid ut iusto cumque est molestiae perspiciatis. In velit reprehenderit aut sint 
+                        voluptas ad voluptatem saepe?</div>
                 </div>
             </div>
         </section>
