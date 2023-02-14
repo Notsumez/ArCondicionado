@@ -96,6 +96,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-right: 20px;
 }
 
 .conteudo-principal-direita {
@@ -167,6 +168,35 @@ body {
 .linha-divisoria-servicos {
     width: 100%;
 }
+
+/* Definindo as propriedades da grade */
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Definindo as propriedades dos itens da grade */
+  .item-servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Definindo as propriedades das imagens dos serviços */
+  .item-servico img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Definindo as propriedades dos títulos dos serviços */
+  .item-servico h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
 /* ###################### Fim do Serviços ###################### */
 
@@ -286,13 +316,57 @@ body {
 
 /* ###################### Começo do Footer ###################### */
 .bg-footer {
-    background-color: #d4d4d4;
+    background-color: #e9edf0;
 }
 
-.container-footer {
+.footer-flex {
+    display: flex;
+}
+
+.footer-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    font-size: 14pt;
+}
+
+.footer-titulo {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column; 
     align-items: center;
+    margin: 20px;
+}
+
+.linha-divisoria-footer {
+    width: 70%;
+}
+
+.form-input {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    font-size: 14pt;
+}
+
+.grupo-input {
+    border-bottom: solid 2px black;
+}
+
+.grupo-input input {
+    background: none;
+    border: none;
+}
+
+.grupo-input-msg {
+    border-bottom: solid 2px black ;
+    margin: 30px;
+}
+
+.grupo-input-msg textarea {
+    background: none;
+    border: none;
 }
 
 /* ###################### Fim do Footer ###################### */

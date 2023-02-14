@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link do css e reset -->
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    <link rel="stylesheet" type="text/css" href="CSS/all.min.css">
     <link rel="shortcut icon" href="./images/logo-shorticon.png" type="image/png">
     <!-- Link do Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -61,9 +62,41 @@
                     <img class="linha-divisoria-servicos" src="./images/linha.svg" alt="Linha Divisória">
                 </h2>
                 <div class="grade-servicos">
-
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
+                    <div class="item-servico">
+                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
+                        <h3>Título do Serviço</h3>
+                    </div>
                 </div>
             </div>
+        </div>
         </section>
 
         <!-- Começo do sobre nós  -->
