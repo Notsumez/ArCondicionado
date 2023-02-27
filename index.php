@@ -249,7 +249,6 @@
         </section>
         <!-- Fim do Produtos  -->
     </main>  
-
     <!-- Incluindo o Footer -->
     <?php include('footer.html');?>
 </body>
