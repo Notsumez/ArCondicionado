@@ -19,6 +19,10 @@ body {
     font-family: 'sansation';
     src: url('../fonts/Sansation_Light.ttf');
 }
+
+.setenta {
+    width: 70%;
+}
 /* ######################  Fim do Geral ###################### */
 
 /* ###################### Começo do Header ###################### */
@@ -121,20 +125,20 @@ body {
 /* ###################### Começo do Missão, Visão e Valores (mvv) ###################### */
 
 .bg-mvv {
-    background: url(../images/ENERGIA_SOLAR_SHUTTER.png) fixed no-repeat;
+    background: url(../images/banner.jpg) fixed no-repeat;
     height: 250px;
 }
 
 .mvv-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 100px;
 }
 
 .mvv-conteudo {
-    font-size: 16pt;
-    color: white;
+    font-size: 18pt;
+    color: rgb(255, 255, 255);
     font-family: 'rexila';
     margin-top: 100px;
 }
@@ -156,6 +160,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 70px;
 }
 
 .titulo-servicos {
@@ -174,8 +179,9 @@ body {
 /* Definindo as propriedades da grade */
 .grade-servicos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    margin: 50px;
   }
   
   /* Definindo as propriedades dos itens da grade */
@@ -196,8 +202,9 @@ body {
   /* Definindo as propriedades dos títulos dos serviços */
   .item-servico h3 {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
 /* ###################### Fim do Serviços ###################### */
@@ -237,7 +244,7 @@ body {
 }
 
 .logotipo-sobre {
-    width: 500px;
+    width: 300px;
     border-radius: 20px;
 }
 /* ###################### Fim do Sobre Nós ###################### */

@@ -35,22 +35,19 @@
         <section class="bg-mvv">
             <div class="mvv-container">
                 <div class="mvv-conteudo">Missão
-                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita nam repellendus distinctio! 
-                        Et Quis aliquam cum autem Quis ut voluptas blanditiis. Et consequatur nisi vel veritatis 
-                        aliquid ut iusto cumque est molestiae perspiciatis. In velit reprehenderit aut sint 
-                        voluptas ad voluptatem saepe?</div>
+                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita <br>
+                    nam repellendus distinctio! Et Quis aliquam cum autem Quis ut <br>
+                    voluptas blanditiis.</div>
                 </div>
                 <div class="mvv-conteudo">Visão
-                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita nam repellendus distinctio! 
-                        Et Quis aliquam cum autem Quis ut voluptas blanditiis. Et consequatur nisi vel veritatis 
-                        aliquid ut iusto cumque est molestiae perspiciatis. In velit reprehenderit aut sint 
-                        voluptas ad voluptatem saepe?</div>
+                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita <br>
+                    nam repellendus distinctio! Et Quis aliquam cum autem Quis ut <br>
+                    voluptas blanditiis.</div>
                 </div>
                 <div class="mvv-conteudo">Valores
-                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita nam repellendus distinctio! 
-                        Et Quis aliquam cum autem Quis ut voluptas blanditiis. Et consequatur nisi vel veritatis 
-                        aliquid ut iusto cumque est molestiae perspiciatis. In velit reprehenderit aut sint 
-                        voluptas ad voluptatem saepe?</div>
+                    <div class="mvv-textos">Lorem ipsum dolor sit amet. Est dicta labore et sint expedita <br>
+                    nam repellendus distinctio! Et Quis aliquam cum autem Quis ut <br>
+                    voluptas blanditiis.</div>
                 </div>
             </div>
         </section>
@@ -63,36 +60,28 @@
                 </h2>
                 <div class="grade-servicos">
                     <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
+                        <img class="setenta" src="../ArCondicionado/images/instalando.jpg" alt="Descrição da imagem">
+                        <h3>Instalação de geradores fotovoltaicos</h3>
                     </div>
                     <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
+                        <img class="setenta" src="../ArCondicionado/images/comercial.jpg" alt="Descrição da imagem">
+                        <h3>Comercial</h3>
                     </div>
                     <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
+                        <img class="setenta" src="../ArCondicionado/images/modulos.jpg" alt="Descrição da imagem">
+                        <h3>Módulos e inversores solares</h3>
                     </div>
                     <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
+                        <img class="setenta" src="images/casa.jpg" alt="Descrição da imagem">
+                        <h3>Residencial</h3>
                     </div>
                     <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
+                        <img class="setenta" src="images/industrial.jpg" alt="Descrição da imagem">
+                        <h3>Industrial</h3>
                     </div>
                     <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
-                    </div>
-                    <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
-                    </div>
-                    <div class="item-servico">
-                        <img src="caminho-para-a-imagem" alt="Descrição da imagem">
-                        <h3>Título do Serviço</h3>
+                        <img class="setenta" src="images/manutencao.jpg" alt="Descrição da imagem">
+                        <h3>Manutenção</h3>
                     </div>
                 </div>
             </div>
