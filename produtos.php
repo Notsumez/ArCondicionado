@@ -1,0 +1,108 @@
+<?php 
+    //Consulta para recuperar os produtos do banco de dados
+    include 'conn/connect.php';
+    $lista = $conn->query("SELECT * FROM vw_produtos ORDER BY id;");
+    $row =  $lista->fetch_assoc();
+    $rows = $lista->num_rows;
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Produtos</title>
+</head>
+<body>
+
+<section class="conteudo-produtos" id="produtos">
+    <div class="conteudo-produtos-info">
+        <h2 class="conteudo-produtos-info-titulo">Produtos
+            <img class="conteudo-produtos-info-divisoria" src="./images/linha.svg" alt="Linha Divisória">
+        </h2>
+        </div>
+        <!-- Começo escolha dos Items -->
+        <div class="produtos-opcoesbtns">
+            <div class="opcao" ng-mouseover="funcArcondicionado()">Ar Condicionado</div>
+            <div class="opcao" ng-mouseover="funcInverter()">Ar Condicionado Inverter</div>
+            <div class="opcao" ng-mouseover="funcMultisplit()">Multi Split</div>
+            <div class="opcao" ng-mouseover="funcEnergiasolar()">Energia Solar</div>
+        </div>
+        <div class="imagens-produtos" ng-show="arcondicionado">
+    <?php 
+        $lista->data_seek(0); // reinicia o ponteiro para o primeiro registro
+        while ($row = $lista->fetch_assoc()) {
+    ?>
+        <div>
+            <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
+        </div>
+        <?php } ?>
+    </div>
+
+    <div class="imagens-produtos" ng-show="inverter">
+        <?php for ($i=0; $i<5; $i++) { ?>
+        <div>
+            <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
+        </div>
+        <?php } ?>
+    </div>
+
+    <div class="imagens-produtos" ng-show="multisplit">
+        <?php for ($i=0; $i<5; $i++) { ?>
+        <div>
+            <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
+        </div>
+        <?php } ?>
+    </div>
+
+    <div class="imagens-produtos" ng-show="energiasolar">
+        <?php for ($i=0; $i<5; $i++) { ?>
+        <div>
+            <img src="../ArCondicionado/images/energia.webp" alt="">
+        </div>
+        <?php } ?>
+    </div>
+
+        <script>
+		    var app = angular.module('meuApp', []);
+		        app.controller('meuController', function($scope) {
+			        $scope.arcondicionado = true;
+			        $scope.inverter = false;
+			        $scope.multisplit = false;
+                    $scope.energiasolar = false;
+			
+			    $scope.funcArcondicionado = function() {
+			        $scope.arcondicionado = true;
+			        $scope.inverter = false;
+			        $scope.energiasolar = false;
+			        $scope.multisplit = false;
+			    }
+
+			    $scope.funcInverter = function() {
+				    $scope.inverter = true;
+				    $scope.arcondicionado = false;
+				    $scope.energiasolar = false;
+				    $scope.multisplit = false;
+			    }
+
+			    $scope.funcMultisplit = function() {
+				    $scope.multisplit = true;
+				    $scope.arcondicionado = false;
+				    $scope.inverter = false;
+                    $scope.energiasolar = false;
+			    }
+
+			    $scope.funcEnergiasolar = function() {
+				    $scope.energiasolar = true;
+				    $scope.arcondicionado = false;
+			        $scope.inverter = false;
+			        $scope.multisplit = false;
+			    }
+		    });
+	    </script>
+        <!-- fim escolha dos items  -->
+</section>
+<!-- Fim do Produtos  -->
+</body>
+</html>
