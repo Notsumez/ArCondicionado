@@ -335,7 +335,9 @@ body {
     font-size: 20pt;
 }
 
-
+.btn-voltar{
+    color: black;
+}
 
 
 /* ###################### Fim do Detalhes ###################### */
