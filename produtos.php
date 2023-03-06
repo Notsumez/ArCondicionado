@@ -34,33 +34,37 @@
         $lista->data_seek(0); // reinicia o ponteiro para o primeiro registro
         while ($row = $lista->fetch_assoc()) {
     ?>
-        <div>
-            <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
-        </div>
+    <tr>
+        <td>
+            <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
+                <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
+            </a>
+        </td>
+    </tr>
         <?php } ?>
     </div>
 
     <div class="imagens-produtos" ng-show="inverter">
         <?php for ($i=0; $i<5; $i++) { ?>
-        <div>
+        <a href="">
             <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
-        </div>
+        </a>
         <?php } ?>
     </div>
 
     <div class="imagens-produtos" ng-show="multisplit">
         <?php for ($i=0; $i<5; $i++) { ?>
-        <div>
+        <a href="">
             <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
-        </div>
+        </a>
         <?php } ?>
     </div>
 
     <div class="imagens-produtos" ng-show="energiasolar">
         <?php for ($i=0; $i<5; $i++) { ?>
-        <div>
+        <a href="">
             <img src="../ArCondicionado/images/energia.webp" alt="">
-        </div>
+        </a>
         <?php } ?>
     </div>
 

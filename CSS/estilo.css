@@ -23,6 +23,10 @@ body {
 .setenta {
     width: 70%;
 }
+
+.hidden {
+    display: none;
+}
 /* ######################  Fim do Geral ###################### */
 
 /* ###################### Começo do Header ###################### */
@@ -52,7 +56,7 @@ body {
 }
 
 .botoes-nav ul {
-    margin-right: 300px;
+    margin-right: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -197,6 +201,7 @@ body {
   .item-servico img {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
   }
   
   /* Definindo as propriedades dos títulos dos serviços */
@@ -323,6 +328,17 @@ body {
 
 /* ###################### Fim do Produtos ###################### */
 
+/* ###################### Começo do Detalhes ###################### */
+
+#container-detalhes{
+    margin: 25px;
+    font-size: 20pt;
+}
+
+
+
+
+/* ###################### Fim do Detalhes ###################### */
 
 /* ###################### Começo do Footer ###################### */
 .bg-footer {

@@ -6,7 +6,7 @@
     <!-- Link do css e reset -->
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
-    <link rel="stylesheet" type="text/css" href="CSS/all.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <link rel="shortcut icon" href="./images/logo-shorticon.png" type="image/png">
     <!-- Link do Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
