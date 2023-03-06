@@ -1,9 +1,10 @@
 <?php 
     //Consulta para recuperar os produtos do banco de dados
     include 'conn/connect.php';
-    $lista = $conn->query("SELECT * FROM vw_produtos ORDER BY id;");
-    $row =  $lista->fetch_assoc();
-    $rows = $lista->num_rows;
+    $arCondicionado = $conn->query("SELECT * FROM vw_produtos WHERE id_tipo = 1 ORDER BY id;");
+    $inverter = $conn->query("SELECT * FROM vw_produtos WHERE id_tipo = 2 ORDER BY id;");
+    $multiSplit = $conn->query("SELECT * FROM vw_produtos WHERE id_tipo = 3 ORDER BY id;");
+    $energiaSolar = $conn->query("SELECT * FROM vw_produtos WHERE id_tipo = 4 ORDER BY id;");
 ?>
 
 <!DOCTYPE html>
@@ -30,41 +31,38 @@
             <div class="opcao" ng-mouseover="funcEnergiasolar()">Energia Solar</div>
         </div>
         <div class="imagens-produtos" ng-show="arcondicionado">
-    <?php 
-        $lista->data_seek(0); // reinicia o ponteiro para o primeiro registro
-        while ($row = $lista->fetch_assoc()) {
-    ?>
-    <tr>
-        <td>
-            <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
-                <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
-            </a>
-        </td>
-    </tr>
-        <?php } ?>
-    </div>
+            <?php while ($row = $arCondicionado->fetch_assoc()) { ?>
+                <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
+                    <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
+                </a>
+            <?php } ?>
+        </div>
 
-    <div class="imagens-produtos" ng-show="inverter">
-        <?php for ($i=0; $i<5; $i++) { ?>
-        <a href="">
-            <img src="../ArCondicionado/images/item_inverter2.webp" alt="">
-        </a>
-        <?php } ?>
-    </div>
+        <div class="imagens-produtos" ng-show="inverter">
+            <?php while ($row = $inverter->fetch_assoc()) { ?>
+                <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
+                    <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
+                </a>
+            <?php } ?>
+        </div>
 
-    <div class="imagens-produtos" ng-show="multisplit">
-        <?php for ($i=0; $i<5; $i++) { ?>
-        <a href="">
-            <img src="../ArCondicionado/images/Ar-Multi-Split.jpg" alt="">
-        </a>
-        <?php } ?>
-    </div>
+        <div class="imagens-produtos" ng-show="multisplit">
+            <?php while ($row = $multiSplit->fetch_assoc()) { ?>
+                <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
+                    <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
+                </a>
+            <?php } ?>
+        </div>
 
     <div class="imagens-produtos" ng-show="energiasolar">
-        <?php for ($i=0; $i<5; $i++) { ?>
-        <a href="">
-            <img src="../ArCondicionado/images/energia.webp" alt="">
-        </a>
+        <?php while ($row = $energiaSolar->fetch_assoc()) { ?>
+            <tr>
+                <td>
+                    <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
+                        <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>">
+                    </a>
+                </td>
+            </tr>
         <?php } ?>
     </div>
 

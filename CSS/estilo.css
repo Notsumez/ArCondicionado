@@ -301,7 +301,7 @@ body {
 }
 
 .imagens-produtos img {
-    width: 70%;
+    width: 60%;
     border-radius: 20px;
     cursor: url('../images/cursor2.cur'), pointer;
 }

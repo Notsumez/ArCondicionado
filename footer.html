@@ -1,15 +1,15 @@
 <footer class="bg-footer">
     <div class="footer-flex">
-        <img src="../ArCondicionado/images/ar_condicionado.png" alt="Ar condicionado">
+        <img src="../ArCondicionado/images/ar_condicionado.png" width="45%" alt="Ar condicionado">
         <h2 class="footer-titulo" id="contato">Contato
             <img class="linha-divisoria-footer" src="../ArCondicionado/images/linha.svg" alt="Linha Divisória">
         <div class="footer-container">
             <address>
-                <i><strong>Avenida Itaquera, 8266 - Itaquera - São Paulo - SP - CEP 08295000</strong></i>
+                <i><i class="fa-solid fa-map-pin"></i><strong> Avenida Itaquera, 8266 - Itaquera - São Paulo - SP - CEP 08295000</strong></i>
                 <br>
                 <br>
                 <br>
-                <i class="fa-regular fa-phone"></i>&nbsp;(11) 2185-9200
+                <i class="fa-solid fa-phone"></i>&nbsp;(11) 2185-9200
                 <br>
             </address>
             <br><br><br><br>
@@ -18,21 +18,15 @@
                 <br>
                 <div class="form-input">
                     <span class="grupo-input">
-                        <i class="fa-solid fa-user"></i>
                         <input type="text" name="nome_contato" placeholder="Digite seu nome" required>
                     </span>
                     <span class="grupo-input">
-                        <i class="fa-solid fa-user"></i>
-                        <!-- formulário de email com aviso de erro  -->
-                        <input type="email" name="email" placeholder="Digite o seu email" ng-model="text">
-                        <span ng-show="form.email.$error.email">Digite um email valido!</span>
-                        <!-- fim do formulário de email com aviso de erro  -->
+                        <input type="email" name="email" placeholder="Digite o seu email">
                     </span>
                 </div>
                 <br>
                 <br>
                 <span class="grupo-input-msg">
-                    <i class="fa-solid fa-user"></i>
                         <textarea name="comentario_contato" cols="70" rows="0" placeholder="Digite sua Mensagem" required></textarea>
                 </span>
             </div>

@@ -32,7 +32,9 @@
             </a>&nbsp;
             Detalhes de <?php echo $row['nome']; ?>
         </h2>             
-        
+        <div id="container-main">
+
+        </div>
         <?php include 'footer.html';?>
 </body>
 </html>

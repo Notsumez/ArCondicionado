@@ -1,6 +1,6 @@
 <?php 
     $host = "localhost";
-    $database = "arcond";
+    $database = "air-dited";
     $user = "root";
     $pass = "";
     $charset = "utf8";
