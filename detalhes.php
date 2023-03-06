@@ -33,7 +33,9 @@
             Detalhes de <?php echo $row['nome']; ?>
         </h2>             
         <div id="container-main">
-
+            <figure>
+                <img src="" alt="">
+            </figure>
         </div>
         <?php include 'footer.html';?>
 </body>
