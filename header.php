@@ -13,6 +13,11 @@
         <a href="index.php">
             <img class="logo-header" src="./images/LogoBgRedondo.png" alt="logotipo">
         </a>
+        <div class="menu-hamburguer">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
         <nav class="botoes-nav">
             <ul>
                 <li><a class="botoes-nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') { echo ' active-border'; } ?>" href="index.php#menu">Home</a></li>
@@ -26,12 +31,36 @@
 </header>
 <script>
     // Script para o menu hamburguer
-    const menuHamburguer = document.querySelector('.menu-hamburguer');
-    const botoesNav = document.querySelector('.botoes-nav ul');
+    class MenuHamburguer {
+        constructor(menuHamburguer, botoesNav) {
+            this.menuHamburguer = document.querySelector(menuHamburguer);
+            this.botoesNav = document.querySelector(botoesNav);
+            this.activeClass = 'active';
 
-    menuHamburguer.addEventListener('click', () => {
-        botoesNav.classList.toggle('active');
-    });
+            this.handleClick = this.handleClick.bind(this);
+        }
+
+        handleClick() {
+            this.botoesNav.classList.toggle(this.activeClass);
+        }
+
+        addClickEvent() {
+            this.menuHamburguer.addEventListener("click", () => this.handleClick());
+        }
+
+        init() {
+            if (this.menuHamburguer) {
+                this.addClickEvent();
+            }
+            return this;
+        }
+    }
+
+    const menuHamburguer = new MenuHamburguer(
+        ".menu-hamburguer",
+        ".botoes-nav"
+    );
+    menuHamburguer.init();
 </script>
 
 </body>

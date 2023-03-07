@@ -321,7 +321,7 @@ body {
 }
 
 .imagens-produtos img:hover {
-    width: 80%;
+    width: 62%;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -401,7 +401,7 @@ body {
 }
 #button-detalhes:hover {
     border-radius: 10px;
-    background-color: rgb(72, 182, 255);
+    background-color: rgb(54, 136, 65);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -510,3 +510,58 @@ body {
     transition: all 0.5s ease;
 }
 /* ###################### Fim do Footer ###################### */
+
+/* ###################### Começo do Responsivo ###################### */
+
+/* Estilos do menu responsivo */
+.menu-hamburguer div{
+    width: 32px;
+    height: 2px;
+    background: #000000;
+    margin: 8px;
+}
+
+.menu-hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.botoes-nav.active{
+    transform: translateX(0);
+}
+
+@media (max-width: 640px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .botoes-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 200vh;
+        background: #ced2d4;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .botoes-nav li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .menu-hamburguer{
+        display: block;
+        z-index: 999999;
+    }
+
+    .botoes-nav.active {
+        transform: translateX(0);
+    }
+}
+
+/* ###################### Fim do Responsivo ###################### */
