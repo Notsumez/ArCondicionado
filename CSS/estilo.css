@@ -441,3 +441,45 @@ body {
     justify-content: center;
 }
 /* ###################### Fim do Footer ###################### */
+
+/* ###################### Começo do Responsivo ###################### */
+@media screen and (min-width: 768px) {
+    .menu-hamburguer-label {
+        display: none;
+    }
+    .botoes-nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .botoes-nav-item {
+        padding: 0 10px;
+    }
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 767px) {
+    .menu-hamburguer-label {
+        display: block;
+    }
+    .botoes-nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .botoes-nav ul.active {
+        display: block;
+    }
+    .botoes-nav-item {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+/* ###################### Fim do Responsivo ###################### */
