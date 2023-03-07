@@ -33,9 +33,31 @@
             Detalhes de <?php echo $row['nome']; ?>
         </h2>             
         <div id="container-main">
-            <figure>
-                <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
-            </figure>
+            <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
+            <div>
+                <p>
+                    <h2><?php echo $row['descricao']; ?></h2> <br> <br>
+                    <?php echo $row['resumo']; ?> <br><br>  
+                    Quantidade Disponível: <?php echo $row['quantidade']; ?> em estoque
+                </p>
+                <?php
+                    // Define o valor do desconto como 10%
+                        $desconto = 0.1;
+                    // Obtém o custo total do produto
+                        $custo_total = $row['custo_total'];
+                    // Calcula o valor com desconto
+                        $preco_com_desconto = $custo_total * (1 - $desconto);
+                ?>
+                <p id="preco">
+                    <h2>
+                        PREÇO: R$
+                        <?php echo number_format($preco_com_desconto, 3, '.', ','); // formata para exibir com duas casas decimais e separador de milhar com ponto ?>
+                        <span class="preco-original">
+                            <strike>R$<?php echo number_format($custo_total, 3, '.', ','); ?></strike>
+                        </span>
+                    </h2>
+                </p>
+            </div>
         </div>
         <?php include 'footer.html';?>
 </body>

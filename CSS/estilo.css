@@ -347,8 +347,37 @@ body {
 
 .btn-voltar{
     color: black;
+    cursor: url('../images/cursor2.cur'), pointer;
 }
 
+#container-main{
+    background-color: white;
+    border-radius: 25px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container-main img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+#container-main div{
+    margin: 25px;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+}
+
+#preco {
+    margin-top: 70px;
+}
+
+.preco-original {
+    display: flex;
+    font-size: 14pt;
+}
 
 /* ###################### Fim do Detalhes ###################### */
 
