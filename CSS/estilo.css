@@ -38,6 +38,9 @@ body {
     top: 0;
 }
 
+.linha-topo-header img{
+    cursor: url('../images/cursor2.cur'), pointer;
+}
 .logo-header {
     font-size: 32px;
     font-weight: bold;
@@ -213,6 +216,7 @@ body {
     height: auto;
     border-radius: 20px;
   }
+
   
   /* Definindo as propriedades dos títulos dos serviços */
   .item-servico h3 {
@@ -370,8 +374,9 @@ body {
     flex-direction: column;
 }
 
-#preco {
-    margin-top: 70px;
+
+#vinte{
+    font-size: 20pt;
 }
 
 .preco-original {
@@ -379,6 +384,50 @@ body {
     font-size: 14pt;
 }
 
+#desc {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+}
+
+#button-detalhes {
+    margin-top: 20px;
+    font-size: 16pt;
+    padding: 16px;
+    background-color: transparent;
+    cursor: url('../images/cursor2.cur'), pointer;
+}
+#button-detalhes:hover {
+    border-radius: 10px;
+    background-color: rgb(72, 182, 255);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#container-sugestoes{
+    background-color: white;
+    padding-top: 20px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+#container-sugestoes h3 {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.lista-sugestoes{
+    display: flex;
+}
+
+#container-sugestoes img {
+    width: 30%;
+}
 /* ###################### Fim do Detalhes ###################### */
 
 /* ###################### Começo do Footer ###################### */
@@ -440,46 +489,24 @@ body {
     display: flex;
     justify-content: center;
 }
+
+#centralizar{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+#button {
+    padding: 16px;
+    background-color: transparent;
+    cursor: url('../images/cursor2.cur'), pointer;
+}
+#button:hover {
+    border-radius: 10px;
+    background-color: rgb(72, 182, 255);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 /* ###################### Fim do Footer ###################### */
-
-/* ###################### Começo do Responsivo ###################### */
-@media screen and (min-width: 768px) {
-    .menu-hamburguer-label {
-        display: none;
-    }
-    .botoes-nav ul {
-        display: flex;
-        justify-content: center;
-    }
-    .botoes-nav-item {
-        padding: 0 10px;
-    }
-}
-
-/* Estilos para telas menores */
-@media screen and (max-width: 767px) {
-    .menu-hamburguer-label {
-        display: block;
-    }
-    .botoes-nav ul {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        text-align: center;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    .botoes-nav ul.active {
-        display: block;
-    }
-    .botoes-nav-item {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-    }
-}
-
-
-/* ###################### Fim do Responsivo ###################### */

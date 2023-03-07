@@ -10,7 +10,9 @@
 
 <header>
     <div class="linha-topo-header">
-        <img class="logo-header" src="./images/LogoBgRedondo.png" alt="logotipo">
+        <a href="index.php">
+            <img class="logo-header" src="./images/LogoBgRedondo.png" alt="logotipo">
+        </a>
         <nav class="botoes-nav">
             <ul>
                 <li><a class="botoes-nav-item <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') { echo ' active-border'; } ?>" href="index.php#menu">Home</a></li>
