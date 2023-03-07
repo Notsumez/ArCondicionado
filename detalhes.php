@@ -21,7 +21,7 @@
     <title>Detalhes</title>
 </head>
 <body>
-    <?php include 'header.html';?>  
+    <?php include 'header.php';?>  
     <div id="container-detalhes">
         <!-- Top para voltar -->
         <h2>
@@ -34,7 +34,7 @@
         </h2>             
         <div id="container-main">
             <figure>
-                <img src="" alt="">
+                <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
             </figure>
         </div>
         <?php include 'footer.html';?>

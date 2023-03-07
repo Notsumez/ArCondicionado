@@ -92,6 +92,16 @@ body {
     text-decoration: none;
 }
 
+.botoes-nav-item {
+    border: none;
+  }
+  
+  .botoes-nav-item.active,
+  .botoes-nav-item.active-border {
+    border: 2px solid black;
+  }
+  
+
 /* ###################### Fim do Header ###################### */
 
 /* ###################### Começo do Principal ###################### */

@@ -14,7 +14,7 @@
 </head>
 <body ng-app="meuApp" ng-controller="meuController">
     <!-- incluuindo o header -->
-    <?php include('header.html');?>
+    <?php include('header.php');?>
 
     <!-- começo do principal  -->
     <main>
