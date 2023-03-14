@@ -22,7 +22,7 @@
         <h2 class="conteudo-produtos-info-titulo">Produtos
             <img class="conteudo-produtos-info-divisoria" src="./images/linha.svg" alt="Linha Divisória">
         </h2>
-        </div>
+    </div>
         <!-- Começo escolha dos Items -->
         <div class="produtos-opcoesbtns">
             <div class="opcao" ng-mouseover="funcArcondicionado()">Ar Condicionado</div>
@@ -54,18 +54,17 @@
             <?php } ?>
         </div>
 
-    <div class="imagens-produtos" ng-show="energiasolar">
-        <?php while ($row = $energiaSolar->fetch_assoc()) { ?>
-            <tr>
-                <td>
-                    <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
-                        <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>">
-                    </a>
-                </td>
-            </tr>
-        <?php } ?>
-    </div>
-
+        <div class="imagens-produtos" ng-show="energiasolar">
+            <?php while ($row = $energiaSolar->fetch_assoc()) { ?>
+                <tr>
+                    <td>
+                        <a href="detalhes.php?id=<?php echo $row['id']; ?>" role="button">
+                            <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>">
+                        </a>
+                    </td>
+                </tr>
+            <?php } ?>
+        </div>
         <script>
 		    var app = angular.module('meuApp', []);
 		        app.controller('meuController', function($scope) {

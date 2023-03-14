@@ -19,9 +19,9 @@
     <!-- começo do principal  -->
     <main>
         <section class="conteudo-principal">
-            <img class="banner-energia-solar" src="./images/energia_solar.png" alt="Imagem Energia Solar">
+            <img class="solar" src="./images/energia_solar.png" alt="Imagem Energia Solar" width="60%">
             <div class="conteudo-principal-direita" >
-                <div class="conteudo-principal-direita-frase">
+                <div>
                     <p>
                         &nbsp; O sistema de Energia Solar funciona com a captação da luz do sol através dos painéis solares, que geram a energia “transportada” até o inversor solar, responsável por converter a energia para a sua rede elétrica.
                         A partir daí energia solar pode ser usada para alimentar qualquer aparelho doméstico, como geladeiras, lâmpadas e aparelhos de ar condicionado, por exemplo.
@@ -96,16 +96,16 @@
                 </h2>
                 <div class="conteudo-sobre">
                     <p class="texto-sobre">
-                        A Air-Dited nasceu para lhe proporcionar a melhor experiência do mercado em relação a energia solar. <br>
-                        Aqui você não precisa se preocupar com projeto, instalação, burocracia, manutenção, logística ou <br>
-                        qualquer outra coisa que te preocupe. Além de darmos suporte total para o financiamento do seu sistema <br>
-                        solar, somos responsáveis pelo estudo de viabilidade técnica, financeira, projeto e dimensionamento do <br>
-                        seu sistema fotovoltaico, homologação com a concessionária, instalação, monitoramento, seguro e manutenção. <br> <br>
-                        Aqui nós literalmente entregamos a solução completa para você! Somos um braço de Itaquera fundado em 2020, <br>
-                        que vem construindo uma história de sucesso, ampliando seus negócios com solidez e transparência desde então. <br>
-                        Dentro de Itaquera também temos a Air-D Solar, nossa importadora e distribuidora dos melhores equipamentos e <br>
-                        produtos para Energia Solar. Escolhemos a qualidade, inovação, tecnologia e atendimento como nossa essência de <br>
-                        ser. Por este motivo a Provedor Solar nasceu para entregar o que tem de melhor em tecnologia e tranquilidade <br>
+                        A Air-Dited nasceu para lhe proporcionar a melhor experiência do mercado em relação a energia solar. 
+                        Aqui você não precisa se preocupar com projeto, instalação, burocracia, manutenção, logística ou 
+                        qualquer outra coisa que te preocupe. Além de darmos suporte total para o financiamento do seu sistema 
+                        solar, somos responsáveis pelo estudo de viabilidade técnica, financeira, projeto e dimensionamento do 
+                        seu sistema fotovoltaico, homologação com a concessionária, instalação, monitoramento, seguro e manutenção. <br>
+                        Aqui nós literalmente entregamos a solução completa para você! Somos um braço de Itaquera fundado em 2020,
+                        que vem construindo uma história de sucesso, ampliando seus negócios com solidez e transparência desde então. 
+                        Dentro de Itaquera também temos a Air-D Solar, nossa importadora e distribuidora dos melhores equipamentos e 
+                        produtos para Energia Solar. Escolhemos a qualidade, inovação, tecnologia e atendimento como nossa essência de 
+                        ser. Por este motivo a Provedor Solar nasceu para entregar o que tem de melhor em tecnologia e tranquilidade.
                         aos nossos clientes. Este sempre será o nosso foco, você!
                     </p>
                     <img class="logotipo-sobre" src="../ArCondicionado/images/LogoBgPreto.png" alt="Logotipo">
