@@ -13,10 +13,10 @@
         <a href="index.php">
             <img class="logo-header" src="./images/LogoBgRedondo.png" alt="logotipo">
         </a>
-        <div class="menu-hamburguer">
-            <div class="linha"></div>
-            <div class="linha"></div>
-            <div class="linha"></div>
+        <div class="mobile-menu">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
         </div>
         <nav class="botoes-nav">
             <ul>
@@ -29,38 +29,7 @@
         </nav>
     </div>
 </header>
-<script>
-    // Script para o menu hamburguer
-    class MenuHamburguer {
-        constructor(menuHamburguer, botoesNav) {
-            this.menuHamburguer = document.querySelector(menuHamburguer);
-            this.botoesNav = document.querySelector(botoesNav);
-            this.activeClass = 'active';
-
-            this.handleClick = this.handleClick.bind(this);
-        }
-
-        handleClick() {
-            this.botoesNav.classList.toggle(this.activeClass);
-        }
-
-        addClickEvent() {
-            this.menuHamburguer.addEventListener("click", () => this.handleClick());
-        }
-
-        init() {
-            if (this.menuHamburguer) {
-                this.addClickEvent();
-            }
-            return this;
-        }
-    }
-
-    const menuHamburguer = new MenuHamburguer(
-        ".menu-hamburguer",
-        ".botoes-nav"
-    );
-    menuHamburguer.init();
+<script src="js/script.js">
 </script>
 
 </body>
