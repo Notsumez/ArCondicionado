@@ -39,17 +39,30 @@
                     <div class="conteudo-flex">
                         <div class="bancos">  
                             <a href="">
-                                <img src="./images/bbrasil.png" width="10%" alt="">
+                                <img src="./images/bbrasil.png" width="7%" alt="">
                             </a>
                             &nbsp;
                             <a href="">
-                                <img src="./images/itau.png" width="10%" alt="">
+                                <img src="./images/itau.png" width="7%" alt="">
                             </a>
                             &nbsp;
                             <a href="">
-                                <img src="./images/santander.png" width="10%" alt="">
+                                <img src="./images/santander.png" width="7%" alt="">
+                            </a>
+                            &nbsp;
+                            <a href="">
+                                <img src="./images/nubank.png" width="7%" alt="">
+                            </a>
+                            &nbsp;
+                            <a href="">
+                                <img src="./images/picpay.png" width="7%" alt="">
+                            </a>
+                            &nbsp;
+                            <a href="">
+                                <img src="./images/inter.png" width="7%" alt="">
                             </a>
                             <h1 class="info-compra">Informações da Compra:</h1> <br>
+                            <form action="">
                                 <h2>Nome:</h2>
                                     <h4 class="info-item"><?php echo $row['nome'];?></h4>
                                 <h2>Descrição:</h2>
@@ -57,12 +70,19 @@
                                 <h2>Resumo:</h2>
                                     <h4 class="info-item"><?php echo $row['resumo'];?></h4>
                                 <h2>Quantidade:</h2>
-                                    <h4 class="info-item"><?php echo $row['quantidade'];?></h4>
+                                    <input type="number" name="quantidade" min="1" max="<?php echo $row['quantidade']; ?>" value="1" onchange="atualizarValorTotal(); validarQuantidadeMaxima(<?php echo $row['quantidade']; ?>);"><?php echo $row['quantidade']; ?> Disponível
                                 <h2>Total:</h2>
-                                    <h4 class="info-item">R$ <?php echo $row['custo_total'];?></h4>
+                                    <h4 class="info-item" id="valor-total">R$ <?php echo $row['custo_total'];?></h4>
+                                <div class="alinhar-btn">
+                                    <button class="btn-finalizar">
+                                        <span>Finalizar Compra <i class="fa-regular fa-credit-card"></i></span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
+                        <hr>
                         <div class="conteudo-direita">
-                            <img src="./images/<?php echo $row['imagem']; ?>" width="150px" height="150px" alt="Imagem do Produto a ser comprado">
+                            <img src="./images/<?php echo $row['imagem']; ?>" width="800px" alt="Imagem do Produto a ser comprado">
                         </div>
                     </div>
                     
@@ -75,4 +95,20 @@
 
     <?php include 'footer.php';?>
 </body>
+<script>
+    function atualizarValorTotal() {
+        const quantidade = parseInt(document.querySelector("input[name='quantidade']").value);
+        const custoTotal = parseFloat("<?php echo $row['custo_total']; ?>".replace(".", "."));
+        const novoValorTotal = (quantidade * custoTotal).toFixed(3).replace(".", ".");
+        document.querySelector("#valor-total").textContent = "R$ " + novoValorTotal;
+    }
+</script>
+<script>
+function validarQuantidadeMaxima(maxQuantidade) {
+  var quantidade = parseInt(document.getElementsByName("quantidade")[0].value);
+  if (quantidade == maxQuantidade) {
+    alert("Esse é o máximo disponível na loja.");
+  }
+}
+</script>
 </html>

@@ -458,6 +458,20 @@ body {
     padding-right: 100px;
 }
 
+.bancos img{
+    border-radius: 10px;
+    cursor: url('../images/cursor2.cur'), pointer;
+}
+
+.bancos img:hover{
+    width: 8%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.53s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
 .conteudo-flex{
     display: flex;
 }
@@ -470,10 +484,8 @@ body {
     margin-bottom: 250px;
 }
 
-.conteudo-direita img{
-    margin-top: 25px;
-    margin-right: 200px;
-    margin-left: -200px;
+.conteudo-flex hr{
+    margin-right: 100px;
 }
 
 .info-item{
@@ -481,6 +493,31 @@ body {
     margin-bottom: 10px;
 }
 
+.btn-finalizar{
+    font-size: 16pt;
+    padding: 16px 106px 16px 106px;
+    background-color: rgb(33, 165, 66);
+    border-color: rgb(58, 189, 91);
+    cursor: url('../images/cursor2.cur'), pointer;
+}
+
+
+.btn-finalizar:hover {
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 9px rgb(33, 165, 66);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.alinhar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
 
 
 /* ###################### Fim do Compras ###################### */
