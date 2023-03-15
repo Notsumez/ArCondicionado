@@ -30,10 +30,7 @@
                     <i class="fa-solid fa-circle-chevron-left"></i>
                 </span>
             </a>&nbsp;
-            Detalhes de 
-                            <?php echo $row['nome']; ?>
-                           
-                        
+            Detalhes de <?php echo $row['nome']; ?>
         </h2>             
         <div id="container-main">
             <img src="../ArCondicionado/images/<?php echo $row['imagem']; ?>" alt="">
@@ -63,10 +60,12 @@
                             de&nbsp;<strike>R$<?php echo number_format($custo_total, 3, '.', ','); ?></strike>
                         </span>
                     </h2>
-                    <button id="button-detalhes" aria-label="enviar" role="button">
-                        Comprar
-                        <i class="fa-solid fa-money-check-dollar"></i>
-                    </button>
+                    <a id="a-btn" href="./compra.php?id=<?php echo $row['id']; ?>">
+                        <button id="button-detalhes" aria-label="enviar" role="button">
+                            Comprar
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                        </button>
+                    </a>
                     <br>
                 </p>
             </div>
@@ -92,6 +91,6 @@
                             <?php } ?>
                             </div>
                         </div>
-        <?php include 'footer.html';?>
+        <?php include 'footer.php';?>
 </body>
 </html>

@@ -118,6 +118,6 @@
             <?php include 'produtos.php'?>
     </main>  
     <!-- Incluindo o Footer -->
-    <?php include('footer.html');?>
+    <?php include('footer.php');?>
 </body>
 </html>

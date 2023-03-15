@@ -16,25 +16,27 @@
             <div class="form-footer">
                 <h2 id="envie">ENVIE-NOS UMA MENSAGEM</h2>
                 <br>
-                <div class="form-input">
-                    <span class="grupo-input">
-                        <input type="text" name="nome_contato" placeholder="Digite seu nome" required>
-                    </span>
-                    <span class="grupo-input">
-                        <input type="email" name="email" placeholder="Digite o seu email">
-                    </span>
-                </div>
-                <br>
-                <br>
-                <span class="grupo-input-msg">
+                <form action="footer_envia.php" name="form_contato" method="post">
+                    <div class="form-input">
+                        <span class="grupo-input">
+                            <input type="text" name="nome_contato" placeholder="Digite seu nome" required>
+                        </span>
+                        <span class="grupo-input">
+                            <input type="email" name="email" placeholder="Digite o seu email">
+                        </span>
+                    </div>
+                    <br>
+                    <br>
+                    <span class="grupo-input-msg">
                         <textarea name="comentario_contato" cols="70" rows="0" placeholder="Digite sua Mensagem" required></textarea>
-                </span>
-                <p id="centralizar">
-                    <button id="button" aria-label="enviar" role="button">
-                        Enviar
-                        <i class="fa-regular fa-paper-plane"></i>
-                    </button>
-                </p>
+                    </span>
+                    <p id="centralizar">
+                        <button id="button" aria-label="enviar" role="button">
+                            Enviar
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </p>
+                </form>
             </div>
         </div>
     </h2>

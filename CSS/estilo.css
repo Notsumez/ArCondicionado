@@ -377,7 +377,6 @@ body {
 }
 
 .preco-original {
-    display: flex;
     font-size: 14pt;
 }
 
@@ -389,10 +388,16 @@ body {
     gap: 5px;
 }
 
+#a-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
 #button-detalhes {
-    margin-top: 20px;
     font-size: 16pt;
-    padding: 16px;
+    padding: 16px 106px 16px 106px;
     background-color: transparent;
     cursor: url('../images/cursor2.cur'), pointer;
 }
@@ -427,6 +432,58 @@ body {
     width: 30%;
 }
 /* ###################### Fim do Detalhes ###################### */
+
+/* ###################### Começo do Compras ###################### */
+.container-compras{
+    margin: 25px;
+    font-size: 15pt;
+}
+
+
+.container-conteudo{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.conteudo-flex {
+    display: flex;
+    margin-left: 15px;
+}
+.conteudo-esquerda h1 {
+    margin-top: 25px;
+}
+
+.bancos {
+    margin-top: 10px;
+    padding-right: 100px;
+}
+
+.conteudo-flex{
+    display: flex;
+}
+
+.conteudo-direita{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    top: 0;
+    margin-bottom: 250px;
+}
+
+.conteudo-direita img{
+    margin-top: 25px;
+    margin-right: 200px;
+    margin-left: -200px;
+}
+
+.info-item{
+    font-size: 13pt;
+    margin-bottom: 10px;
+}
+
+
+
+/* ###################### Fim do Compras ###################### */
 
 /* ###################### Começo do Footer ###################### */
 .bg-footer {
