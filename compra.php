@@ -35,9 +35,10 @@
         <div class="container-conteudo">
             <div class="conteudo-flex">
                 <div class="conteudo-esquerda">
-                    <h1>Selecione a Forma de Pagamento:</h2>
+                    
                     <div class="conteudo-flex">
                         <div class="bancos">  
+                            <h1>Selecione a Forma de Pagamento:</h2>
                             <a href="">
                                 <img src="./images/bbrasil.png" width="7%" alt="">
                             </a>
@@ -63,16 +64,28 @@
                             </a>
                             <h1 class="info-compra">Informações da Compra:</h1> <br>
                             <form action="">
-                                <h2>Nome:</h2>
+                                <h2 class="info-compra">Nome:</h2>
                                     <h4 class="info-item"><?php echo $row['nome'];?></h4>
-                                <h2>Descrição:</h2>
+                                    <br><br> 
+                                <h2 class="info-compra">Descrição:</h2>
                                     <h4 class="info-item"><?php echo $row['descricao'];?></h4>
-                                <h2>Resumo:</h2>
+                                    <br><br> 
+                                <h2 class="info-compra">Resumo:</h2>
                                     <h4 class="info-item"><?php echo $row['resumo'];?></h4>
-                                <h2>Quantidade:</h2>
+                                    <br><br> 
+                                <h2 class="info-compra">Quantidade:</h2>
                                     <input type="number" name="quantidade" min="1" max="<?php echo $row['quantidade']; ?>" value="1" onchange="atualizarValorTotal(); validarQuantidadeMaxima(<?php echo $row['quantidade']; ?>);"><?php echo $row['quantidade']; ?> Disponível
-                                <h2>Total:</h2>
-                                    <h4 class="info-item" id="valor-total">R$ <?php echo $row['custo_total'];?></h4>
+                                <br><br> 
+                                <?php
+                                     // Define o valor do desconto como 10%
+                                        $desconto = 0.1;
+                                    // Obtém o custo total do produto
+                                        $custo_total = $row['custo_total'];
+                                    // Calcula o valor com desconto
+                                     $preco_com_desconto = $custo_total * (1 - $desconto);
+                                    ?>
+                                <h2 class="info-compra">Total:</h2>
+                                    <h4 class="info-item" id="valor-total">R$ <?php echo number_format($preco_com_desconto, 3, '.', ','); // formata para exibir com duas casas decimais e separador de milhar com ponto ?></h4>
                                 <div class="alinhar-btn">
                                     <button class="btn-finalizar">
                                         <span>Finalizar Compra <i class="fa-regular fa-credit-card"></i></span>
@@ -82,7 +95,7 @@
                         </div>
                         <hr>
                         <div class="conteudo-direita">
-                            <img src="./images/<?php echo $row['imagem']; ?>" width="800px" alt="Imagem do Produto a ser comprado">
+                            <img src="./images/<?php echo $row['imagem']; ?>" width="500px" alt="Imagem do Produto a ser comprado">
                         </div>
                     </div>
                     
